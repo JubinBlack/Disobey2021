@@ -1,0 +1,638 @@
+
+bin:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000201000 <.text>:
+  201000:	55                   	push   %rbp
+  201001:	48 89 e5             	mov    %rsp,%rbp
+  201004:	41 57                	push   %r15
+  201006:	41 56                	push   %r14
+  201008:	41 55                	push   %r13
+  20100a:	41 54                	push   %r12
+  20100c:	53                   	push   %rbx
+  20100d:	48 83 ec 18          	sub    $0x18,%rsp
+  201011:	49 89 fe             	mov    %rdi,%r14
+  201014:	49 8b 16             	mov    (%r14),%rdx
+  201017:	48 63 c2             	movslq %edx,%rax
+  20101a:	49 8d 3c c6          	lea    (%r14,%rax,8),%rdi
+  20101e:	48 83 c7 10          	add    $0x10,%rdi
+  201022:	48 83 3d d6 2f 00 00 	cmpq   $0x0,0x2fd6(%rip)        # 204000 <environ@@Base>
+  201029:	00 
+  20102a:	75 07                	jne    201033 <_init_tls@plt-0x6fd>
+  20102c:	48 89 3d cd 2f 00 00 	mov    %rdi,0x2fcd(%rip)        # 204000 <environ@@Base>
+  201033:	49 83 c6 08          	add    $0x8,%r14
+  201037:	85 d2                	test   %edx,%edx
+  201039:	7e 35                	jle    201070 <_init_tls@plt-0x6c0>
+  20103b:	49 8b 06             	mov    (%r14),%rax
+  20103e:	48 85 c0             	test   %rax,%rax
+  201041:	75 11                	jne    201054 <_init_tls@plt-0x6dc>
+  201043:	eb 2b                	jmp    201070 <_init_tls@plt-0x6c0>
+  201045:	66 66 2e 0f 1f 84 00 	data16 nopw %cs:0x0(%rax,%rax,1)
+  20104c:	00 00 00 00 
+  201050:	48 83 c0 01          	add    $0x1,%rax
+  201054:	48 89 05 a5 0f 00 00 	mov    %rax,0xfa5(%rip)        # 202000 <__progname@@Base>
+  20105b:	eb 07                	jmp    201064 <_init_tls@plt-0x6cc>
+  20105d:	0f 1f 00             	nopl   (%rax)
+  201060:	48 83 c0 01          	add    $0x1,%rax
+  201064:	0f b6 08             	movzbl (%rax),%ecx
+  201067:	80 f9 2f             	cmp    $0x2f,%cl
+  20106a:	74 e4                	je     201050 <_init_tls@plt-0x6e0>
+  20106c:	84 c9                	test   %cl,%cl
+  20106e:	75 f0                	jne    201060 <_init_tls@plt-0x6d0>
+  201070:	48 89 7d d0          	mov    %rdi,-0x30(%rbp)
+  201074:	48 89 55 c8          	mov    %rdx,-0x38(%rbp)
+  201078:	b8 28 30 20 00       	mov    $0x203028,%eax
+  20107d:	48 85 c0             	test   %rax,%rax
+  201080:	0f 85 9c 00 00 00    	jne    201122 <_init_tls@plt-0x60e>
+  201086:	b8 00 00 00 00       	mov    $0x0,%eax
+  20108b:	b9 00 00 00 00       	mov    $0x0,%ecx
+  201090:	48 39 c1             	cmp    %rax,%rcx
+  201093:	73 5f                	jae    2010f4 <_init_tls@plt-0x63c>
+  201095:	41 bd 00 00 00 00    	mov    $0x0,%r13d
+  20109b:	41 bc 00 00 00 00    	mov    $0x0,%r12d
+  2010a1:	66 66 66 66 66 66 2e 	data16 data16 data16 data16 data16 nopw %cs:0x0(%rax,%rax,1)
+  2010a8:	0f 1f 84 00 00 00 00 
+  2010af:	00 
+  2010b0:	b8 01 00 00 00       	mov    $0x1,%eax
+  2010b5:	0f a2                	cpuid  
+  2010b7:	89 ce                	mov    %ecx,%esi
+  2010b9:	89 d7                	mov    %edx,%edi
+  2010bb:	31 c0                	xor    %eax,%eax
+  2010bd:	0f a2                	cpuid  
+  2010bf:	bb 00 00 00 00       	mov    $0x0,%ebx
+  2010c4:	b9 00 00 00 00       	mov    $0x0,%ecx
+  2010c9:	83 f8 07             	cmp    $0x7,%eax
+  2010cc:	72 09                	jb     2010d7 <_init_tls@plt-0x659>
+  2010ce:	31 c9                	xor    %ecx,%ecx
+  2010d0:	b8 07 00 00 00       	mov    $0x7,%eax
+  2010d5:	0f a2                	cpuid  
+  2010d7:	41 83 7d 08 25       	cmpl   $0x25,0x8(%r13)
+  2010dc:	75 0d                	jne    2010eb <_init_tls@plt-0x645>
+  2010de:	4d 8b 7d 00          	mov    0x0(%r13),%r15
+  2010e2:	89 da                	mov    %ebx,%edx
+  2010e4:	41 ff 55 10          	callq  *0x10(%r13)
+  2010e8:	49 89 07             	mov    %rax,(%r15)
+  2010eb:	49 83 c5 18          	add    $0x18,%r13
+  2010ef:	4d 39 e5             	cmp    %r12,%r13
+  2010f2:	72 bc                	jb     2010b0 <_init_tls@plt-0x680>
+  2010f4:	e8 37 06 00 00       	callq  201730 <_init_tls@plt>
+  2010f9:	48 8b 5d c8          	mov    -0x38(%rbp),%rbx
+  2010fd:	89 df                	mov    %ebx,%edi
+  2010ff:	4c 89 f6             	mov    %r14,%rsi
+  201102:	4c 8b 7d d0          	mov    -0x30(%rbp),%r15
+  201106:	4c 89 fa             	mov    %r15,%rdx
+  201109:	e8 22 00 00 00       	callq  201130 <_init_tls@plt-0x600>
+  20110e:	89 df                	mov    %ebx,%edi
+  201110:	4c 89 f6             	mov    %r14,%rsi
+  201113:	4c 89 fa             	mov    %r15,%rdx
+  201116:	e8 35 02 00 00       	callq  201350 <_init_tls@plt-0x3e0>
+  20111b:	89 c7                	mov    %eax,%edi
+  20111d:	e8 1e 06 00 00       	callq  201740 <exit@plt>
+  201122:	48 89 f7             	mov    %rsi,%rdi
+  201125:	e8 26 06 00 00       	callq  201750 <atexit@plt>
+  20112a:	eb cd                	jmp    2010f9 <_init_tls@plt-0x637>
+  20112c:	0f 1f 40 00          	nopl   0x0(%rax)
+  201130:	55                   	push   %rbp
+  201131:	48 89 e5             	mov    %rsp,%rbp
+  201134:	41 57                	push   %r15
+  201136:	41 56                	push   %r14
+  201138:	41 55                	push   %r13
+  20113a:	41 54                	push   %r12
+  20113c:	53                   	push   %rbx
+  20113d:	50                   	push   %rax
+  20113e:	49 89 d6             	mov    %rdx,%r14
+  201141:	49 89 f7             	mov    %rsi,%r15
+  201144:	41 89 fc             	mov    %edi,%r12d
+  201147:	b8 28 30 20 00       	mov    $0x203028,%eax
+  20114c:	48 85 c0             	test   %rax,%rax
+  20114f:	0f 85 ed 00 00 00    	jne    201242 <_init_tls@plt-0x4ee>
+  201155:	bf 60 12 20 00       	mov    $0x201260,%edi
+  20115a:	e8 f1 05 00 00       	callq  201750 <atexit@plt>
+  20115f:	b8 00 00 00 00       	mov    $0x0,%eax
+  201164:	b9 00 00 00 00       	mov    $0x0,%ecx
+  201169:	48 29 c1             	sub    %rax,%rcx
+  20116c:	48 89 c8             	mov    %rcx,%rax
+  20116f:	48 c1 f8 3f          	sar    $0x3f,%rax
+  201173:	48 c1 e8 3d          	shr    $0x3d,%rax
+  201177:	48 01 c8             	add    %rcx,%rax
+  20117a:	48 c1 f8 03          	sar    $0x3,%rax
+  20117e:	74 52                	je     2011d2 <_init_tls@plt-0x55e>
+  201180:	31 db                	xor    %ebx,%ebx
+  201182:	b8 00 00 00 00       	mov    $0x0,%eax
+  201187:	b9 00 00 00 00       	mov    $0x0,%ecx
+  20118c:	48 29 c1             	sub    %rax,%rcx
+  20118f:	49 89 cd             	mov    %rcx,%r13
+  201192:	49 c1 fd 3f          	sar    $0x3f,%r13
+  201196:	49 c1 ed 3d          	shr    $0x3d,%r13
+  20119a:	49 01 cd             	add    %rcx,%r13
+  20119d:	49 c1 fd 03          	sar    $0x3,%r13
+  2011a1:	66 66 66 66 66 66 2e 	data16 data16 data16 data16 data16 nopw %cs:0x0(%rax,%rax,1)
+  2011a8:	0f 1f 84 00 00 00 00 
+  2011af:	00 
+  2011b0:	48 8b 04 dd 00 00 00 	mov    0x0(,%rbx,8),%rax
+  2011b7:	00 
+  2011b8:	48 83 f8 02          	cmp    $0x2,%rax
+  2011bc:	72 0b                	jb     2011c9 <_init_tls@plt-0x567>
+  2011be:	44 89 e7             	mov    %r12d,%edi
+  2011c1:	4c 89 fe             	mov    %r15,%rsi
+  2011c4:	4c 89 f2             	mov    %r14,%rdx
+  2011c7:	ff d0                	callq  *%rax
+  2011c9:	48 83 c3 01          	add    $0x1,%rbx
+  2011cd:	4c 39 eb             	cmp    %r13,%rbx
+  2011d0:	72 de                	jb     2011b0 <_init_tls@plt-0x580>
+  2011d2:	e8 21 05 00 00       	callq  2016f8 <_init_tls@plt-0x38>
+  2011d7:	b8 00 00 00 00       	mov    $0x0,%eax
+  2011dc:	b9 00 00 00 00       	mov    $0x0,%ecx
+  2011e1:	48 29 c1             	sub    %rax,%rcx
+  2011e4:	48 89 c8             	mov    %rcx,%rax
+  2011e7:	48 c1 f8 3f          	sar    $0x3f,%rax
+  2011eb:	48 c1 e8 3d          	shr    $0x3d,%rax
+  2011ef:	48 01 c8             	add    %rcx,%rax
+  2011f2:	48 c1 f8 03          	sar    $0x3,%rax
+  2011f6:	74 4a                	je     201242 <_init_tls@plt-0x4ee>
+  2011f8:	31 db                	xor    %ebx,%ebx
+  2011fa:	b8 00 00 00 00       	mov    $0x0,%eax
+  2011ff:	b9 00 00 00 00       	mov    $0x0,%ecx
+  201204:	48 29 c1             	sub    %rax,%rcx
+  201207:	49 89 cd             	mov    %rcx,%r13
+  20120a:	49 c1 fd 3f          	sar    $0x3f,%r13
+  20120e:	49 c1 ed 3d          	shr    $0x3d,%r13
+  201212:	49 01 cd             	add    %rcx,%r13
+  201215:	49 c1 fd 03          	sar    $0x3,%r13
+  201219:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+  201220:	48 8b 04 dd 00 00 00 	mov    0x0(,%rbx,8),%rax
+  201227:	00 
+  201228:	48 83 f8 02          	cmp    $0x2,%rax
+  20122c:	72 0b                	jb     201239 <_init_tls@plt-0x4f7>
+  20122e:	44 89 e7             	mov    %r12d,%edi
+  201231:	4c 89 fe             	mov    %r15,%rsi
+  201234:	4c 89 f2             	mov    %r14,%rdx
+  201237:	ff d0                	callq  *%rax
+  201239:	48 83 c3 01          	add    $0x1,%rbx
+  20123d:	4c 39 eb             	cmp    %r13,%rbx
+  201240:	72 de                	jb     201220 <_init_tls@plt-0x510>
+  201242:	48 83 c4 08          	add    $0x8,%rsp
+  201246:	5b                   	pop    %rbx
+  201247:	41 5c                	pop    %r12
+  201249:	41 5d                	pop    %r13
+  20124b:	41 5e                	pop    %r14
+  20124d:	41 5f                	pop    %r15
+  20124f:	5d                   	pop    %rbp
+  201250:	c3                   	retq   
+  201251:	66 66 66 66 66 66 2e 	data16 data16 data16 data16 data16 nopw %cs:0x0(%rax,%rax,1)
+  201258:	0f 1f 84 00 00 00 00 
+  20125f:	00 
+  201260:	55                   	push   %rbp
+  201261:	48 89 e5             	mov    %rsp,%rbp
+  201264:	53                   	push   %rbx
+  201265:	50                   	push   %rax
+  201266:	b8 00 00 00 00       	mov    $0x0,%eax
+  20126b:	b9 00 00 00 00       	mov    $0x0,%ecx
+  201270:	48 29 c1             	sub    %rax,%rcx
+  201273:	48 89 c8             	mov    %rcx,%rax
+  201276:	48 c1 f8 3f          	sar    $0x3f,%rax
+  20127a:	48 c1 e8 3d          	shr    $0x3d,%rax
+  20127e:	48 01 c8             	add    %rcx,%rax
+  201281:	48 c1 f8 03          	sar    $0x3,%rax
+  201285:	74 42                	je     2012c9 <_init_tls@plt-0x467>
+  201287:	b8 00 00 00 00       	mov    $0x0,%eax
+  20128c:	b9 00 00 00 00       	mov    $0x0,%ecx
+  201291:	48 29 c1             	sub    %rax,%rcx
+  201294:	48 89 cb             	mov    %rcx,%rbx
+  201297:	48 c1 fb 3f          	sar    $0x3f,%rbx
+  20129b:	48 c1 eb 3d          	shr    $0x3d,%rbx
+  20129f:	48 01 cb             	add    %rcx,%rbx
+  2012a2:	48 c1 fb 03          	sar    $0x3,%rbx
+  2012a6:	66 2e 0f 1f 84 00 00 	nopw   %cs:0x0(%rax,%rax,1)
+  2012ad:	00 00 00 
+  2012b0:	48 8b 04 dd f8 ff ff 	mov    -0x8(,%rbx,8),%rax
+  2012b7:	ff 
+  2012b8:	48 83 c3 ff          	add    $0xffffffffffffffff,%rbx
+  2012bc:	48 83 f8 02          	cmp    $0x2,%rax
+  2012c0:	72 02                	jb     2012c4 <_init_tls@plt-0x46c>
+  2012c2:	ff d0                	callq  *%rax
+  2012c4:	48 85 db             	test   %rbx,%rbx
+  2012c7:	75 e7                	jne    2012b0 <_init_tls@plt-0x480>
+  2012c9:	48 83 c4 08          	add    $0x8,%rsp
+  2012cd:	5b                   	pop    %rbx
+  2012ce:	5d                   	pop    %rbp
+  2012cf:	e9 38 04 00 00       	jmpq   20170c <_init_tls@plt-0x24>
+  2012d4:	cc                   	int3   
+  2012d5:	cc                   	int3   
+  2012d6:	cc                   	int3   
+  2012d7:	cc                   	int3   
+  2012d8:	cc                   	int3   
+  2012d9:	cc                   	int3   
+  2012da:	cc                   	int3   
+  2012db:	cc                   	int3   
+  2012dc:	cc                   	int3   
+  2012dd:	cc                   	int3   
+  2012de:	cc                   	int3   
+  2012df:	cc                   	int3   
+  2012e0:	8a 05 32 0d 00 00    	mov    0xd32(%rip),%al        # 202018 <__progname@@Base+0x18>
+  2012e6:	84 c0                	test   %al,%al
+  2012e8:	75 2a                	jne    201314 <_init_tls@plt-0x41c>
+  2012ea:	55                   	push   %rbp
+  2012eb:	48 89 e5             	mov    %rsp,%rbp
+  2012ee:	eb 0d                	jmp    2012fd <_init_tls@plt-0x433>
+  2012f0:	48 83 c1 08          	add    $0x8,%rcx
+  2012f4:	48 89 0d 15 0d 00 00 	mov    %rcx,0xd15(%rip)        # 202010 <__progname@@Base+0x10>
+  2012fb:	ff d0                	callq  *%rax
+  2012fd:	48 8b 0d 0c 0d 00 00 	mov    0xd0c(%rip),%rcx        # 202010 <__progname@@Base+0x10>
+  201304:	48 8b 01             	mov    (%rcx),%rax
+  201307:	48 85 c0             	test   %rax,%rax
+  20130a:	75 e4                	jne    2012f0 <_init_tls@plt-0x440>
+  20130c:	c6 05 05 0d 00 00 01 	movb   $0x1,0xd05(%rip)        # 202018 <__progname@@Base+0x18>
+  201313:	5d                   	pop    %rbp
+  201314:	c3                   	retq   
+  201315:	66 66 2e 0f 1f 84 00 	data16 nopw %cs:0x0(%rax,%rax,1)
+  20131c:	00 00 00 00 
+  201320:	55                   	push   %rbp
+  201321:	48 89 e5             	mov    %rsp,%rbp
+  201324:	48 83 3d f4 1c 00 00 	cmpq   $0x0,0x1cf4(%rip)        # 203020 <__progname@@Base+0x1020>
+  20132b:	00 
+  20132c:	74 12                	je     201340 <_init_tls@plt-0x3f0>
+  20132e:	b8 00 00 00 00       	mov    $0x0,%eax
+  201333:	48 85 c0             	test   %rax,%rax
+  201336:	74 08                	je     201340 <_init_tls@plt-0x3f0>
+  201338:	bf 20 30 20 00       	mov    $0x203020,%edi
+  20133d:	5d                   	pop    %rbp
+  20133e:	ff e0                	jmpq   *%rax
+  201340:	5d                   	pop    %rbp
+  201341:	c3                   	retq   
+  201342:	cc                   	int3   
+  201343:	cc                   	int3   
+  201344:	cc                   	int3   
+  201345:	cc                   	int3   
+  201346:	cc                   	int3   
+  201347:	cc                   	int3   
+  201348:	cc                   	int3   
+  201349:	cc                   	int3   
+  20134a:	cc                   	int3   
+  20134b:	cc                   	int3   
+  20134c:	cc                   	int3   
+  20134d:	cc                   	int3   
+  20134e:	cc                   	int3   
+  20134f:	cc                   	int3   
+  201350:	55                   	push   %rbp
+  201351:	48 89 e5             	mov    %rsp,%rbp
+  201354:	41 56                	push   %r14
+  201356:	53                   	push   %rbx
+  201357:	48 83 ec 30          	sub    $0x30,%rsp
+  20135b:	49 89 f6             	mov    %rsi,%r14
+  20135e:	89 fb                	mov    %edi,%ebx
+  201360:	48 8b 05 b9 2c 00 00 	mov    0x2cb9(%rip),%rax        # 204020 <__stack_chk_guard@@FBSD_1.0>
+  201367:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+  20136b:	31 ff                	xor    %edi,%edi
+  20136d:	be 03 00 00 00       	mov    $0x3,%esi
+  201372:	e8 c9 01 00 00       	callq  201540 <_init_tls@plt-0x1f0>
+  201377:	83 f8 ff             	cmp    $0xffffffff,%eax
+  20137a:	0f 84 46 01 00 00    	je     2014c6 <_init_tls@plt-0x26a>
+  201380:	bf 01 00 00 00       	mov    $0x1,%edi
+  201385:	be 05 00 00 00       	mov    $0x5,%esi
+  20138a:	e8 b1 01 00 00       	callq  201540 <_init_tls@plt-0x1f0>
+  20138f:	83 f8 ff             	cmp    $0xffffffff,%eax
+  201392:	0f 84 2e 01 00 00    	je     2014c6 <_init_tls@plt-0x26a>
+  201398:	bf 02 00 00 00       	mov    $0x2,%edi
+  20139d:	be 05 00 00 00       	mov    $0x5,%esi
+  2013a2:	e8 99 01 00 00       	callq  201540 <_init_tls@plt-0x1f0>
+  2013a7:	83 f8 ff             	cmp    $0xffffffff,%eax
+  2013aa:	0f 84 16 01 00 00    	je     2014c6 <_init_tls@plt-0x26a>
+  2013b0:	e8 ab 03 00 00       	callq  201760 <cap_enter@plt>
+  2013b5:	85 c0                	test   %eax,%eax
+  2013b7:	79 0e                	jns    2013c7 <_init_tls@plt-0x369>
+  2013b9:	e8 b2 03 00 00       	callq  201770 <__error@plt>
+  2013be:	83 38 4e             	cmpl   $0x4e,(%rax)
+  2013c1:	0f 85 ff 00 00 00    	jne    2014c6 <_init_tls@plt-0x26a>
+  2013c7:	83 fb 02             	cmp    $0x2,%ebx
+  2013ca:	0f 85 18 01 00 00    	jne    2014e8 <_init_tls@plt-0x248>
+  2013d0:	49 8b 7e 08          	mov    0x8(%r14),%rdi
+  2013d4:	48 8d 55 c8          	lea    -0x38(%rbp),%rdx
+  2013d8:	48 8d 4d e6          	lea    -0x1a(%rbp),%rcx
+  2013dc:	be 19 03 20 00       	mov    $0x200319,%esi
+  2013e1:	31 c0                	xor    %eax,%eax
+  2013e3:	e8 98 03 00 00       	callq  201780 <sscanf@plt>
+  2013e8:	83 f8 01             	cmp    $0x1,%eax
+  2013eb:	0f 85 f7 00 00 00    	jne    2014e8 <_init_tls@plt-0x248>
+  2013f1:	f2 0f 10 45 c8       	movsd  -0x38(%rbp),%xmm0
+  2013f6:	66 0f 2e 05 2a ef ff 	ucomisd -0x10d6(%rip),%xmm0        # 200328 <_init_tls@plt-0x1408>
+  2013fd:	ff 
+  2013fe:	0f 87 e4 00 00 00    	ja     2014e8 <_init_tls@plt-0x248>
+  201404:	66 0f 57 c9          	xorpd  %xmm1,%xmm1
+  201408:	66 0f 2e c8          	ucomisd %xmm0,%xmm1
+  20140c:	0f 83 97 00 00 00    	jae    2014a9 <_init_tls@plt-0x287>
+  201412:	f2 4c 0f 2c f0       	cvttsd2si %xmm0,%r14
+  201417:	4c 89 75 d0          	mov    %r14,-0x30(%rbp)
+  20141b:	0f 57 c9             	xorps  %xmm1,%xmm1
+  20141e:	f2 49 0f 2a ce       	cvtsi2sd %r14,%xmm1
+  201423:	f2 0f 5c c1          	subsd  %xmm1,%xmm0
+  201427:	f2 0f 59 05 f1 ee ff 	mulsd  -0x110f(%rip),%xmm0        # 200320 <_init_tls@plt-0x1410>
+  20142e:	ff 
+  20142f:	f2 48 0f 2c c0       	cvttsd2si %xmm0,%rax
+  201434:	48 89 45 d8          	mov    %rax,-0x28(%rbp)
+  201438:	bf 1d 00 00 00       	mov    $0x1d,%edi
+  20143d:	be 20 15 20 00       	mov    $0x201520,%esi
+  201442:	e8 49 03 00 00       	callq  201790 <signal@plt>
+  201447:	48 8d 7d d0          	lea    -0x30(%rbp),%rdi
+  20144b:	48 89 fe             	mov    %rdi,%rsi
+  20144e:	e8 4d 03 00 00       	callq  2017a0 <nanosleep@plt>
+  201453:	85 c0                	test   %eax,%eax
+  201455:	74 52                	je     2014a9 <_init_tls@plt-0x287>
+  201457:	48 8d 5d d0          	lea    -0x30(%rbp),%rbx
+  20145b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+  201460:	48 83 3d a0 2b 00 00 	cmpq   $0x0,0x2ba0(%rip)        # 204008 <environ@@Base+0x8>
+  201467:	00 
+  201468:	74 26                	je     201490 <_init_tls@plt-0x2a0>
+  20146a:	8b 75 d0             	mov    -0x30(%rbp),%esi
+  20146d:	bf ca 02 20 00       	mov    $0x2002ca,%edi
+  201472:	31 c0                	xor    %eax,%eax
+  201474:	44 89 f2             	mov    %r14d,%edx
+  201477:	e8 34 03 00 00       	callq  2017b0 <warnx@plt>
+  20147c:	48 c7 05 81 2b 00 00 	movq   $0x0,0x2b81(%rip)        # 204008 <environ@@Base+0x8>
+  201483:	00 00 00 00 
+  201487:	eb 11                	jmp    20149a <_init_tls@plt-0x296>
+  201489:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+  201490:	e8 db 02 00 00       	callq  201770 <__error@plt>
+  201495:	83 38 04             	cmpl   $0x4,(%rax)
+  201498:	75 3d                	jne    2014d7 <_init_tls@plt-0x259>
+  20149a:	48 89 df             	mov    %rbx,%rdi
+  20149d:	48 89 de             	mov    %rbx,%rsi
+  2014a0:	e8 fb 02 00 00       	callq  2017a0 <nanosleep@plt>
+  2014a5:	85 c0                	test   %eax,%eax
+  2014a7:	75 b7                	jne    201460 <_init_tls@plt-0x2d0>
+  2014a9:	48 8b 05 70 2b 00 00 	mov    0x2b70(%rip),%rax        # 204020 <__stack_chk_guard@@FBSD_1.0>
+  2014b0:	48 3b 45 e8          	cmp    -0x18(%rbp),%rax
+  2014b4:	75 0b                	jne    2014c1 <_init_tls@plt-0x26f>
+  2014b6:	31 c0                	xor    %eax,%eax
+  2014b8:	48 83 c4 30          	add    $0x30,%rsp
+  2014bc:	5b                   	pop    %rbx
+  2014bd:	41 5e                	pop    %r14
+  2014bf:	5d                   	pop    %rbp
+  2014c0:	c3                   	retq   
+  2014c1:	e8 fa 02 00 00       	callq  2017c0 <__stack_chk_fail@plt>
+  2014c6:	bf 01 00 00 00       	mov    $0x1,%edi
+  2014cb:	be 0f 03 20 00       	mov    $0x20030f,%esi
+  2014d0:	31 c0                	xor    %eax,%eax
+  2014d2:	e8 f9 02 00 00       	callq  2017d0 <err@plt>
+  2014d7:	bf 01 00 00 00       	mov    $0x1,%edi
+  2014dc:	be c0 02 20 00       	mov    $0x2002c0,%esi
+  2014e1:	31 c0                	xor    %eax,%eax
+  2014e3:	e8 e8 02 00 00       	callq  2017d0 <err@plt>
+  2014e8:	e8 03 00 00 00       	callq  2014f0 <_init_tls@plt-0x240>
+  2014ed:	0f 1f 00             	nopl   (%rax)
+  2014f0:	55                   	push   %rbp
+  2014f1:	48 89 e5             	mov    %rsp,%rbp
+  2014f4:	48 8b 0d 65 2b 00 00 	mov    0x2b65(%rip),%rcx        # 204060 <__stderrp@@FBSD_1.0>
+  2014fb:	bf f9 02 20 00       	mov    $0x2002f9,%edi
+  201500:	be 15 00 00 00       	mov    $0x15,%esi
+  201505:	ba 01 00 00 00       	mov    $0x1,%edx
+  20150a:	e8 d1 02 00 00       	callq  2017e0 <fwrite@plt>
+  20150f:	bf 01 00 00 00       	mov    $0x1,%edi
+  201514:	e8 27 02 00 00       	callq  201740 <exit@plt>
+  201519:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+  201520:	55                   	push   %rbp
+  201521:	48 89 e5             	mov    %rsp,%rbp
+  201524:	48 c7 05 d9 2a 00 00 	movq   $0x1,0x2ad9(%rip)        # 204008 <environ@@Base+0x8>
+  20152b:	01 00 00 00 
+  20152f:	5d                   	pop    %rbp
+  201530:	c3                   	retq   
+  201531:	66 66 66 66 66 66 2e 	data16 data16 data16 data16 data16 nopw %cs:0x0(%rax,%rax,1)
+  201538:	0f 1f 84 00 00 00 00 
+  20153f:	00 
+  201540:	55                   	push   %rbp
+  201541:	48 89 e5             	mov    %rsp,%rbp
+  201544:	41 57                	push   %r15
+  201546:	41 56                	push   %r14
+  201548:	53                   	push   %rbx
+  201549:	48 83 ec 38          	sub    $0x38,%rsp
+  20154d:	48 8b 05 cc 2a 00 00 	mov    0x2acc(%rip),%rax        # 204020 <__stack_chk_guard@@FBSD_1.0>
+  201554:	48 89 45 e0          	mov    %rax,-0x20(%rbp)
+  201558:	41 89 f7             	mov    %esi,%r15d
+  20155b:	41 89 fe             	mov    %edi,%r14d
+  20155e:	48 8b 05 db ed ff ff 	mov    -0x1225(%rip),%rax        # 200340 <_init_tls@plt-0x13f0>
+  201565:	48 89 45 c0          	mov    %rax,-0x40(%rbp)
+  201569:	48 bb 01 00 00 00 00 	movabs $0x200000000000001,%rbx
+  201570:	00 00 02 
+  201573:	0f 28 05 b6 ed ff ff 	movaps -0x124a(%rip),%xmm0        # 200330 <_init_tls@plt-0x1400>
+  20157a:	0f 29 45 b0          	movaps %xmm0,-0x50(%rbp)
+  20157e:	4c 8d 53 0b          	lea    0xb(%rbx),%r10
+  201582:	48 8d 8b ff 7f 00 00 	lea    0x7fff(%rbx),%rcx
+  201589:	4c 8d 83 ff ff 07 00 	lea    0x7ffff(%rbx),%r8
+  201590:	48 ba 20 00 00 00 00 	movabs $0x400000000000020,%rdx
+  201597:	00 00 04 
+  20159a:	48 8d 75 d0          	lea    -0x30(%rbp),%rsi
+  20159e:	31 ff                	xor    %edi,%edi
+  2015a0:	4c 8d 4a 60          	lea    0x60(%rdx),%r9
+  2015a4:	31 c0                	xor    %eax,%eax
+  2015a6:	6a 00                	pushq  $0x0
+  2015a8:	41 52                	push   %r10
+  2015aa:	e8 41 02 00 00       	callq  2017f0 <__cap_rights_init@plt>
+  2015af:	48 83 c4 10          	add    $0x10,%rsp
+  2015b3:	41 f6 c7 02          	test   $0x2,%r15b
+  2015b7:	0f 85 93 00 00 00    	jne    201650 <_init_tls@plt-0xe0>
+  2015bd:	41 f6 c7 04          	test   $0x4,%r15b
+  2015c1:	0f 85 a3 00 00 00    	jne    20166a <_init_tls@plt-0xc6>
+  2015c7:	41 f6 c7 08          	test   $0x8,%r15b
+  2015cb:	74 17                	je     2015e4 <_init_tls@plt-0x14c>
+  2015cd:	48 81 c3 ff 03 00 00 	add    $0x3ff,%rbx
+  2015d4:	48 8d 7d d0          	lea    -0x30(%rbp),%rdi
+  2015d8:	31 d2                	xor    %edx,%edx
+  2015da:	31 c0                	xor    %eax,%eax
+  2015dc:	48 89 de             	mov    %rbx,%rsi
+  2015df:	e8 1c 02 00 00       	callq  201800 <__cap_rights_set@plt>
+  2015e4:	48 8d 75 d0          	lea    -0x30(%rbp),%rsi
+  2015e8:	44 89 f7             	mov    %r14d,%edi
+  2015eb:	e8 20 02 00 00       	callq  201810 <cap_rights_limit@plt>
+  2015f0:	85 c0                	test   %eax,%eax
+  2015f2:	79 0e                	jns    201602 <_init_tls@plt-0x12e>
+  2015f4:	e8 77 01 00 00       	callq  201770 <__error@plt>
+  2015f9:	83 38 4e             	cmpl   $0x4e,(%rax)
+  2015fc:	0f 85 88 00 00 00    	jne    20168a <_init_tls@plt-0xa6>
+  201602:	48 8d 75 b0          	lea    -0x50(%rbp),%rsi
+  201606:	ba 03 00 00 00       	mov    $0x3,%edx
+  20160b:	44 89 f7             	mov    %r14d,%edi
+  20160e:	e8 0d 02 00 00       	callq  201820 <cap_ioctls_limit@plt>
+  201613:	85 c0                	test   %eax,%eax
+  201615:	79 12                	jns    201629 <_init_tls@plt-0x107>
+  201617:	e8 54 01 00 00       	callq  201770 <__error@plt>
+  20161c:	48 89 c1             	mov    %rax,%rcx
+  20161f:	b8 ff ff ff ff       	mov    $0xffffffff,%eax
+  201624:	83 39 4e             	cmpl   $0x4e,(%rcx)
+  201627:	75 7a                	jne    2016a3 <_init_tls@plt-0x8d>
+  201629:	be 08 00 00 00       	mov    $0x8,%esi
+  20162e:	44 89 f7             	mov    %r14d,%edi
+  201631:	e8 fa 01 00 00       	callq  201830 <cap_fcntls_limit@plt>
+  201636:	85 c0                	test   %eax,%eax
+  201638:	79 12                	jns    20164c <_init_tls@plt-0xe4>
+  20163a:	e8 31 01 00 00       	callq  201770 <__error@plt>
+  20163f:	48 89 c1             	mov    %rax,%rcx
+  201642:	b8 ff ff ff ff       	mov    $0xffffffff,%eax
+  201647:	83 39 4e             	cmpl   $0x4e,(%rcx)
+  20164a:	75 57                	jne    2016a3 <_init_tls@plt-0x8d>
+  20164c:	31 c0                	xor    %eax,%eax
+  20164e:	eb 53                	jmp    2016a3 <_init_tls@plt-0x8d>
+  201650:	48 8d 7d d0          	lea    -0x30(%rbp),%rdi
+  201654:	31 d2                	xor    %edx,%edx
+  201656:	31 c0                	xor    %eax,%eax
+  201658:	48 89 de             	mov    %rbx,%rsi
+  20165b:	e8 a0 01 00 00       	callq  201800 <__cap_rights_set@plt>
+  201660:	41 f6 c7 04          	test   $0x4,%r15b
+  201664:	0f 84 5d ff ff ff    	je     2015c7 <_init_tls@plt-0x169>
+  20166a:	48 8d 73 01          	lea    0x1(%rbx),%rsi
+  20166e:	48 8d 7d d0          	lea    -0x30(%rbp),%rdi
+  201672:	31 d2                	xor    %edx,%edx
+  201674:	31 c0                	xor    %eax,%eax
+  201676:	e8 85 01 00 00       	callq  201800 <__cap_rights_set@plt>
+  20167b:	41 f6 c7 08          	test   $0x8,%r15b
+  20167f:	0f 85 48 ff ff ff    	jne    2015cd <_init_tls@plt-0x163>
+  201685:	e9 5a ff ff ff       	jmpq   2015e4 <_init_tls@plt-0x14c>
+  20168a:	e8 e1 00 00 00       	callq  201770 <__error@plt>
+  20168f:	83 38 09             	cmpl   $0x9,(%rax)
+  201692:	0f 95 c0             	setne  %al
+  201695:	41 f6 c7 01          	test   $0x1,%r15b
+  201699:	0f 94 c1             	sete   %cl
+  20169c:	08 c1                	or     %al,%cl
+  20169e:	0f b6 c1             	movzbl %cl,%eax
+  2016a1:	f7 d8                	neg    %eax
+  2016a3:	48 8b 0d 76 29 00 00 	mov    0x2976(%rip),%rcx        # 204020 <__stack_chk_guard@@FBSD_1.0>
+  2016aa:	48 3b 4d e0          	cmp    -0x20(%rbp),%rcx
+  2016ae:	75 0b                	jne    2016bb <_init_tls@plt-0x75>
+  2016b0:	48 83 c4 38          	add    $0x38,%rsp
+  2016b4:	5b                   	pop    %rbx
+  2016b5:	41 5e                	pop    %r14
+  2016b7:	41 5f                	pop    %r15
+  2016b9:	5d                   	pop    %rbp
+  2016ba:	c3                   	retq   
+  2016bb:	e8 00 01 00 00       	callq  2017c0 <__stack_chk_fail@plt>
+  2016c0:	55                   	push   %rbp
+  2016c1:	48 89 e5             	mov    %rsp,%rbp
+  2016c4:	53                   	push   %rbx
+  2016c5:	50                   	push   %rax
+  2016c6:	48 8b 05 33 19 00 00 	mov    0x1933(%rip),%rax        # 203000 <__progname@@Base+0x1000>
+  2016cd:	48 83 f8 ff          	cmp    $0xffffffffffffffff,%rax
+  2016d1:	74 1c                	je     2016ef <_init_tls@plt-0x41>
+  2016d3:	bb f8 2f 20 00       	mov    $0x202ff8,%ebx
+  2016d8:	0f 1f 84 00 00 00 00 	nopl   0x0(%rax,%rax,1)
+  2016df:	00 
+  2016e0:	ff d0                	callq  *%rax
+  2016e2:	48 8b 03             	mov    (%rbx),%rax
+  2016e5:	48 83 c3 f8          	add    $0xfffffffffffffff8,%rbx
+  2016e9:	48 83 f8 ff          	cmp    $0xffffffffffffffff,%rax
+  2016ed:	75 f1                	jne    2016e0 <_init_tls@plt-0x50>
+  2016ef:	48 83 c4 08          	add    $0x8,%rsp
+  2016f3:	5b                   	pop    %rbx
+  2016f4:	5d                   	pop    %rbp
+  2016f5:	c3                   	retq   
+  2016f6:	cc                   	int3   
+  2016f7:	cc                   	int3   
+
+Disassembly of section .init:
+
+00000000002016f8 <.init>:
+  2016f8:	48 83 ec 08          	sub    $0x8,%rsp
+  2016fc:	e8 1f fc ff ff       	callq  201320 <_init_tls@plt-0x410>
+  201701:	e8 ba ff ff ff       	callq  2016c0 <_init_tls@plt-0x70>
+  201706:	48 83 c4 08          	add    $0x8,%rsp
+  20170a:	c3                   	retq   
+
+Disassembly of section .fini:
+
+000000000020170c <.fini>:
+  20170c:	48 83 ec 08          	sub    $0x8,%rsp
+  201710:	e8 cb fb ff ff       	callq  2012e0 <_init_tls@plt-0x450>
+  201715:	48 83 c4 08          	add    $0x8,%rsp
+  201719:	c3                   	retq   
+
+Disassembly of section .plt:
+
+0000000000201720 <_init_tls@plt-0x10>:
+  201720:	ff 35 02 09 00 00    	pushq  0x902(%rip)        # 202028 <__progname@@Base+0x28>
+  201726:	ff 25 04 09 00 00    	jmpq   *0x904(%rip)        # 202030 <__progname@@Base+0x30>
+  20172c:	0f 1f 40 00          	nopl   0x0(%rax)
+
+0000000000201730 <_init_tls@plt>:
+  201730:	ff 25 02 09 00 00    	jmpq   *0x902(%rip)        # 202038 <_init_tls@FBSD_1.0>
+  201736:	68 00 00 00 00       	pushq  $0x0
+  20173b:	e9 e0 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+0000000000201740 <exit@plt>:
+  201740:	ff 25 fa 08 00 00    	jmpq   *0x8fa(%rip)        # 202040 <exit@FBSD_1.0>
+  201746:	68 01 00 00 00       	pushq  $0x1
+  20174b:	e9 d0 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+0000000000201750 <atexit@plt>:
+  201750:	ff 25 f2 08 00 00    	jmpq   *0x8f2(%rip)        # 202048 <atexit@FBSD_1.0>
+  201756:	68 02 00 00 00       	pushq  $0x2
+  20175b:	e9 c0 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+0000000000201760 <cap_enter@plt>:
+  201760:	ff 25 ea 08 00 00    	jmpq   *0x8ea(%rip)        # 202050 <cap_enter@FBSD_1.2>
+  201766:	68 03 00 00 00       	pushq  $0x3
+  20176b:	e9 b0 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+0000000000201770 <__error@plt>:
+  201770:	ff 25 e2 08 00 00    	jmpq   *0x8e2(%rip)        # 202058 <__error@FBSD_1.0>
+  201776:	68 04 00 00 00       	pushq  $0x4
+  20177b:	e9 a0 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+0000000000201780 <sscanf@plt>:
+  201780:	ff 25 da 08 00 00    	jmpq   *0x8da(%rip)        # 202060 <sscanf@FBSD_1.0>
+  201786:	68 05 00 00 00       	pushq  $0x5
+  20178b:	e9 90 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+0000000000201790 <signal@plt>:
+  201790:	ff 25 d2 08 00 00    	jmpq   *0x8d2(%rip)        # 202068 <signal@FBSD_1.0>
+  201796:	68 06 00 00 00       	pushq  $0x6
+  20179b:	e9 80 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+00000000002017a0 <nanosleep@plt>:
+  2017a0:	ff 25 ca 08 00 00    	jmpq   *0x8ca(%rip)        # 202070 <nanosleep@FBSD_1.0>
+  2017a6:	68 07 00 00 00       	pushq  $0x7
+  2017ab:	e9 70 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+00000000002017b0 <warnx@plt>:
+  2017b0:	ff 25 c2 08 00 00    	jmpq   *0x8c2(%rip)        # 202078 <warnx@FBSD_1.0>
+  2017b6:	68 08 00 00 00       	pushq  $0x8
+  2017bb:	e9 60 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+00000000002017c0 <__stack_chk_fail@plt>:
+  2017c0:	ff 25 ba 08 00 00    	jmpq   *0x8ba(%rip)        # 202080 <__stack_chk_fail@FBSD_1.0>
+  2017c6:	68 09 00 00 00       	pushq  $0x9
+  2017cb:	e9 50 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+00000000002017d0 <err@plt>:
+  2017d0:	ff 25 b2 08 00 00    	jmpq   *0x8b2(%rip)        # 202088 <err@FBSD_1.0>
+  2017d6:	68 0a 00 00 00       	pushq  $0xa
+  2017db:	e9 40 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+00000000002017e0 <fwrite@plt>:
+  2017e0:	ff 25 aa 08 00 00    	jmpq   *0x8aa(%rip)        # 202090 <fwrite@FBSD_1.0>
+  2017e6:	68 0b 00 00 00       	pushq  $0xb
+  2017eb:	e9 30 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+00000000002017f0 <__cap_rights_init@plt>:
+  2017f0:	ff 25 a2 08 00 00    	jmpq   *0x8a2(%rip)        # 202098 <__cap_rights_init@FBSD_1.3>
+  2017f6:	68 0c 00 00 00       	pushq  $0xc
+  2017fb:	e9 20 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+0000000000201800 <__cap_rights_set@plt>:
+  201800:	ff 25 9a 08 00 00    	jmpq   *0x89a(%rip)        # 2020a0 <__cap_rights_set@FBSD_1.3>
+  201806:	68 0d 00 00 00       	pushq  $0xd
+  20180b:	e9 10 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+0000000000201810 <cap_rights_limit@plt>:
+  201810:	ff 25 92 08 00 00    	jmpq   *0x892(%rip)        # 2020a8 <cap_rights_limit@FBSD_1.3>
+  201816:	68 0e 00 00 00       	pushq  $0xe
+  20181b:	e9 00 ff ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+0000000000201820 <cap_ioctls_limit@plt>:
+  201820:	ff 25 8a 08 00 00    	jmpq   *0x88a(%rip)        # 2020b0 <cap_ioctls_limit@FBSD_1.3>
+  201826:	68 0f 00 00 00       	pushq  $0xf
+  20182b:	e9 f0 fe ff ff       	jmpq   201720 <_init_tls@plt-0x10>
+
+0000000000201830 <cap_fcntls_limit@plt>:
+  201830:	ff 25 82 08 00 00    	jmpq   *0x882(%rip)        # 2020b8 <cap_fcntls_limit@FBSD_1.3>
+  201836:	68 10 00 00 00       	pushq  $0x10
+  20183b:	e9 e0 fe ff ff       	jmpq   201720 <_init_tls@plt-0x10>
