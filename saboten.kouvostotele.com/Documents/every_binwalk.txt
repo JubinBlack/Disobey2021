@@ -1,0 +1,196 @@
+---------------------------------------every_binwalk.txt-------------------------------
+ExifTool Version Number         : 12.07
+File Name                       : every_binwalk.txt
+Directory                       : .
+File Size                       : 88 bytes
+File Modification Date/Time     : 2020:10:21 14:19:22-04:00
+File Access Date/Time           : 2020:10:21 14:19:22-04:00
+File Inode Change Date/Time     : 2020:10:21 14:19:22-04:00
+File Permissions                : rw-r--r--
+File Type                       : TXT
+File Type Extension             : txt
+MIME Type                       : text/plain
+MIME Encoding                   : us-ascii
+Newlines                        : Unix LF
+Line Count                      : 1
+Word Count                      : 1
+---------------------------------------fbkuva.png-------------------------------
+ExifTool Version Number         : 12.07
+File Name                       : fbkuva.png
+Directory                       : .
+File Size                       : 470 kB
+File Modification Date/Time     : 2020:10:20 05:35:29-04:00
+File Access Date/Time           : 2020:10:21 14:09:35-04:00
+File Inode Change Date/Time     : 2020:10:20 05:40:29-04:00
+File Permissions                : rwxrw-rw-
+File Type                       : JPEG
+File Type Extension             : jpg
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.02
+Resolution Unit                 : None
+X Resolution                    : 1
+Y Resolution                    : 1
+Current IPTC Digest             : 9f1e2cc9c56c29d3be90e9e47e31fcd2
+Special Instructions            : FBMD01000a9a010000374b0000540e0100760e0100d10e010055330200d3150400392704005b2704008f27040076570700
+Original Transmission Reference : flLMyWEustXbF6lWXLzx
+Image Width                     : 1512
+Image Height                    : 991
+Encoding Process                : Progressive DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Image Size                      : 1512x991
+Megapixels                      : 1.5
+---------------------------------------MRI_2.png-------------------------------
+ExifTool Version Number         : 12.07
+File Name                       : MRI_2.png
+Directory                       : .
+File Size                       : 1551 kB
+File Modification Date/Time     : 2020:09:28 06:05:13-04:00
+File Access Date/Time           : 2020:10:21 14:09:35-04:00
+File Inode Change Date/Time     : 2020:10:20 05:39:56-04:00
+File Permissions                : rwxrw-rw-
+File Type                       : PNG
+File Type Extension             : png
+MIME Type                       : image/png
+Image Width                     : 1512
+Image Height                    : 991
+Bit Depth                       : 8
+Color Type                      : RGB with Alpha
+Compression                     : Deflate/Inflate
+Filter                          : Adaptive
+Interlace                       : Noninterlaced
+Pixels Per Unit X               : 5669
+Pixels Per Unit Y               : 5669
+Pixel Units                     : meters
+Image Size                      : 1512x991
+Megapixels                      : 1.5
+---------------------------------------MRI.png-------------------------------
+ExifTool Version Number         : 12.07
+File Name                       : MRI.png
+Directory                       : .
+File Size                       : 1551 kB
+File Modification Date/Time     : 2020:09:28 06:05:13-04:00
+File Access Date/Time           : 2020:10:21 11:23:57-04:00
+File Inode Change Date/Time     : 2020:10:18 10:12:47-04:00
+File Permissions                : r--r--r--
+File Type                       : PNG
+File Type Extension             : png
+MIME Type                       : image/png
+Image Width                     : 1512
+Image Height                    : 991
+Bit Depth                       : 8
+Color Type                      : RGB with Alpha
+Compression                     : Deflate/Inflate
+Filter                          : Adaptive
+Interlace                       : Noninterlaced
+Pixels Per Unit X               : 5669
+Pixels Per Unit Y               : 5669
+Pixel Units                     : meters
+Image Size                      : 1512x991
+Megapixels                      : 1.5
+---------------------------------------MRI.zip-------------------------------
+ExifTool Version Number         : 12.07
+File Name                       : MRI.zip
+Directory                       : .
+File Size                       : 1531 kB
+File Modification Date/Time     : 2020:10:13 22:23:00-04:00
+File Access Date/Time           : 2020:10:21 11:23:29-04:00
+File Inode Change Date/Time     : 2020:10:18 01:31:38-04:00
+File Permissions                : rw-r--r--
+File Type                       : ZIP
+File Type Extension             : zip
+MIME Type                       : application/zip
+Zip Required Version            : 20
+Zip Bit Flag                    : 0
+Zip Compression                 : Deflated
+Zip Modify Date                 : 2020:09:28 13:05:14
+Zip CRC                         : 0x526e6826
+Zip Compressed Size             : 1567150
+Zip Uncompressed Size           : 1588732
+Zip File Name                   : MRI.png
+---------------------------------------qr_koodi.jpg-------------------------------
+ExifTool Version Number         : 12.07
+File Name                       : qr_koodi.jpg
+Directory                       : .
+File Size                       : 84 kB
+File Modification Date/Time     : 2020:10:18 02:22:33-04:00
+File Access Date/Time           : 2020:10:21 11:25:31-04:00
+File Inode Change Date/Time     : 2020:10:18 02:23:03-04:00
+File Permissions                : rwxrw-rw-
+File Type                       : JPEG
+File Type Extension             : jpg
+MIME Type                       : image/jpeg
+Profile CMM Type                : 
+Profile Version                 : 2.0.0
+Profile Class                   : Display Device Profile
+Color Space Data                : RGB
+Profile Connection Space        : XYZ
+Profile Date Time               : 2009:03:27 21:36:31
+Profile File Signature          : acsp
+Primary Platform                : Unknown ()
+CMM Flags                       : Not Embedded, Independent
+Device Manufacturer             : 
+Device Model                    : 
+Device Attributes               : Reflective, Glossy, Positive, Color
+Rendering Intent                : Perceptual
+Connection Space Illuminant     : 0.9642 1 0.82491
+Profile Creator                 : 
+Profile ID                      : 29f83ddeaff255ae7842fae4ca83390d
+Profile Description             : sRGB IEC61966-2-1 black scaled
+Blue Matrix Column              : 0.14307 0.06061 0.7141
+Blue Tone Reproduction Curve    : (Binary data 2060 bytes, use -b option to extract)
+Device Model Desc               : IEC 61966-2-1 Default RGB Colour Space - sRGB
+Green Matrix Column             : 0.38515 0.71687 0.09708
+Green Tone Reproduction Curve   : (Binary data 2060 bytes, use -b option to extract)
+Luminance                       : 0 80 0
+Measurement Observer            : CIE 1931
+Measurement Backing             : 0 0 0
+Measurement Geometry            : Unknown
+Measurement Flare               : 0%
+Measurement Illuminant          : D65
+Media Black Point               : 0.01205 0.0125 0.01031
+Red Matrix Column               : 0.43607 0.22249 0.01392
+Red Tone Reproduction Curve     : (Binary data 2060 bytes, use -b option to extract)
+Technology                      : Cathode Ray Tube Display
+Viewing Cond Desc               : Reference Viewing Condition in IEC 61966-2-1
+Media White Point               : 0.9642 1 0.82491
+Profile Copyright               : Copyright International Color Consortium, 2009
+Chromatic Adaptation            : 1.04791 0.02293 -0.0502 0.0296 0.99046 -0.01707 -0.00925 0.01506 0.75179
+JFIF Version                    : 1.01
+Resolution Unit                 : None
+X Resolution                    : 1
+Y Resolution                    : 1
+Image Width                     : 1080
+Image Height                    : 1920
+Encoding Process                : Progressive DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Image Size                      : 1080x1920
+Megapixels                      : 2.1
+---------------------------------------Study1.odt-------------------------------
+ExifTool Version Number         : 12.07
+File Name                       : Study1.odt
+Directory                       : .
+File Size                       : 22 kB
+File Modification Date/Time     : 2020:09:28 10:05:00-04:00
+File Access Date/Time           : 2020:10:21 11:13:48-04:00
+File Inode Change Date/Time     : 2020:10:18 01:31:38-04:00
+File Permissions                : rw-r--r--
+File Type                       : ODT
+File Type Extension             : odt
+MIME Type                       : application/vnd.oasis.opendocument.text
+Creation-date                   : 2017:10:20 23:40:51.940000000
+Generator                       : OpenOffice/4.1.6$Win32 OpenOffice.org_project/416m1$Build-9790
+Date                            : 2020:09:01 18:26:09.60
+Editing-duration                : PT1H15M52S
+Editing-cycles                  : 25
+Document-statistic Table-count  : 0
+Document-statistic Image-count  : 0
+Document-statistic Object-count : 0
+Document-statistic Page-count   : 1
+Document-statistic Paragraph-count: 10
+Document-statistic Word-count   : 368
+Document-statistic Character-count: 2685
+Preview PNG                     : (Binary data 13387 bytes, use -b option to extract)
