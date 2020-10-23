@@ -1,0 +1,52 @@
+# BANNER FILE NOT PROVIDED (-b option)
+# BULK_EXTRACTOR-Version: 1.6.0 ($Rev: 10844 $)
+# Feature-Recorder: url
+# Filename: .
+# Feature-File-Version: 1.1
+./Documents/Study1.odt􀀜-20094	http://www.w3.org/1999/xlink	0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http
+./Documents/Study1.odt􀀜-20134	http://purl.org/dc/elements/1.1/	link" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="ur
+./Documents/Study1.odt􀀜-20239	http://openoffice.org/2004/office	1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:grddl="h
+./Documents/Study1.odt􀀜-20287	http://www.w3.org/2003/g/data-view#	e" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:textooo=
+./Documents/Study1.odt􀀜-20339	http://openoffice.org/2013/office	 xmlns:textooo="http://openoffice.org/2013/office" office:version
+./Documents/Study1.odt􀀜-14054-ZIP-459	http://www.w3.org/1999/xlink	0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http
+./Documents/Study1.odt􀀜-14054-ZIP-499	http://purl.org/dc/elements/1.1/	link" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="ur
+./Documents/Study1.odt􀀜-14054-ZIP-863	http://www.w3.org/1998/Math/MathML	.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="ur
+./Documents/Study1.odt􀀜-14054-ZIP-1034	http://openoffice.org/2004/office	1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="ht
+./Documents/Study1.odt􀀜-14054-ZIP-1081	http://openoffice.org/2004/writer	ce" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="ht
+./Documents/Study1.odt􀀜-14054-ZIP-1128	http://openoffice.org/2004/calc	er" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="htt
+./Documents/Study1.odt􀀜-14054-ZIP-1172	http://www.w3.org/2001/xml-events	alc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="
+./Documents/Study1.odt􀀜-14054-ZIP-1221	http://www.w3.org/2002/xforms	" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="htt
+./Documents/Study1.odt􀀜-14054-ZIP-1263	http://www.w3.org/2001/XMLSchema	rms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="htt
+./Documents/Study1.odt􀀜-14054-ZIP-1308	http://www.w3.org/2001/XMLSchema-instance	ema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="htt
+./Documents/Study1.odt􀀜-14054-ZIP-1362	http://openoffice.org/2005/report	nce" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:
+./Documents/Study1.odt􀀜-14054-ZIP-1466	http://www.w3.org/1999/xhtml	2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="h
+./Documents/Study1.odt􀀜-14054-ZIP-1509	http://www.w3.org/2003/g/data-view#	l" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:tableooo
+./Documents/Study1.odt􀀜-14054-ZIP-1562	http://openoffice.org/2009/table	xmlns:tableooo="http://openoffice.org/2009/table" xmlns:textooo=
+./Documents/Study1.odt􀀜-14054-ZIP-1611	http://openoffice.org/2013/office	 xmlns:textooo="http://openoffice.org/2013/office" xmlns:field="u
+./Documents/Study1.odt􀀜-16206-ZIP-142	http://www.w3.org/1999/xlink	0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:config="
+./Documents/Study1.odt􀀜-16206-ZIP-247	http://openoffice.org/2004/office	1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:textooo=
+./Documents/Study1.odt􀀜-16206-ZIP-297	http://openoffice.org/2013/office	 xmlns:textooo="http://openoffice.org/2013/office" office:version
+./Documents/Study1.odt􀀜-17615-ZIP-458	http://www.w3.org/1999/xlink	0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http
+./Documents/Study1.odt􀀜-17615-ZIP-498	http://purl.org/dc/elements/1.1/	link" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="ur
+./Documents/Study1.odt􀀜-17615-ZIP-862	http://www.w3.org/1998/Math/MathML	.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="ur
+./Documents/Study1.odt􀀜-17615-ZIP-1033	http://openoffice.org/2004/office	1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="ht
+./Documents/Study1.odt􀀜-17615-ZIP-1080	http://openoffice.org/2004/writer	ce" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="ht
+./Documents/Study1.odt􀀜-17615-ZIP-1127	http://openoffice.org/2004/calc	er" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="htt
+./Documents/Study1.odt􀀜-17615-ZIP-1171	http://www.w3.org/2001/xml-events	alc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:rpt="htt
+./Documents/Study1.odt􀀜-17615-ZIP-1217	http://openoffice.org/2005/report	nts" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:
+./Documents/Study1.odt􀀜-17615-ZIP-1321	http://www.w3.org/1999/xhtml	2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="h
+./Documents/Study1.odt􀀜-17615-ZIP-1364	http://www.w3.org/2003/g/data-view#	l" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:tableooo
+./Documents/Study1.odt􀀜-17615-ZIP-1417	http://openoffice.org/2009/table	xmlns:tableooo="http://openoffice.org/2009/table" xmlns:textooo=
+./Documents/Study1.odt􀀜-17615-ZIP-1466	http://openoffice.org/2013/office	 xmlns:textooo="http://openoffice.org/2013/office" xmlns:loext="u
+./Documents/Study1.odt􀀜-19599-ZIP-59	http://www.w3.org/1999/02/22-rdf-syntax-ns#	:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">\x0A  <rdf:Descri
+./Documents/Study1.odt􀀜-19599-ZIP-176	http://docs.oasis-open.org/ns/office/1.2/meta/odf#StylesFile	e rdf:resource="http://docs.oasis-open.org/ns/office/1.2/meta/odf#StylesFile"/>\x0A  </rdf:Desc
+./Documents/Study1.odt􀀜-19599-ZIP-322	http://docs.oasis-open.org/ns/office/1.2/meta/pkg#	Part xmlns:ns0="http://docs.oasis-open.org/ns/office/1.2/meta/pkg#" rdf:resource="
+./Documents/Study1.odt􀀜-19599-ZIP-495	http://docs.oasis-open.org/ns/office/1.2/meta/odf#ContentFile	e rdf:resource="http://docs.oasis-open.org/ns/office/1.2/meta/odf#ContentFile"/>\x0A  </rdf:Desc
+./Documents/Study1.odt􀀜-19599-ZIP-642	http://docs.oasis-open.org/ns/office/1.2/meta/pkg#	Part xmlns:ns0="http://docs.oasis-open.org/ns/office/1.2/meta/pkg#" rdf:resource="
+./Documents/Study1.odt􀀜-19599-ZIP-805	http://docs.oasis-open.org/ns/office/1.2/meta/pkg#Document	e rdf:resource="http://docs.oasis-open.org/ns/office/1.2/meta/pkg#Document"/>\x0A  </rdf:Desc
+./prod/sb-ihv/firmware/NX-H218/0-00-1.0/bin/bin􀀜-105337	http://www.w3.org/1999/02/22-rdf-syntax-ns#	:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">\x0A  <rdf:Descri
+./prod/sb-ihv/firmware/NX-H218/0-00-1.0/bin/bin􀀜-105429	http://purl.org/dc/elements/1.1/	"\x0A    xmlns:dc="http://purl.org/dc/elements/1.1/"\x0A    xmlns:phot
+./prod/sb-ihv/firmware/NX-H218/0-00-1.0/bin/bin􀀜-105484	http://ns.adobe.com/photoshop/1.0/	mlns:photoshop="http://ns.adobe.com/photoshop/1.0/"\x0A    xmlns:xmp=
+./prod/sb-ihv/firmware/NX-H218/0-00-1.0/bin/bin􀀜-105535	http://ns.adobe.com/xap/1.0/	\x0A    xmlns:xmp="http://ns.adobe.com/xap/1.0/"\x0A    xmlns:xmpM
+./prod/sb-ihv/firmware/NX-H218/0-00-1.0/bin/bin􀀜-105582	http://ns.adobe.com/xap/1.0/mm/	   xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"\x0A    xmlns:stEv
+./prod/sb-ihv/firmware/NX-H218/0-00-1.0/bin/bin􀀜-105632	http://ns.adobe.com/xap/1.0/sType/ResourceEvent#	   xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"\x0A   photoshop:C
