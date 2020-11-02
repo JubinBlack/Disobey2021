@@ -1,0 +1,11 @@
+# BANNER FILE NOT PROVIDED (-b option)
+# BULK_EXTRACTOR-Version: 1.6.0 ($Rev: 10844 $)
+# Feature-Recorder: unzip_carved
+# Filename: .
+# Feature-File-Version: 1.1
+./Documents/Study1.odt􀀜-14054-ZIP-0	unzip_carved/000/._Documents_Study1.odt____-14054-ZIP-0_content.xml	<fileobject><filename>Results2/unzip_carved/000/._Documents_Study1.odt____-14054-ZIP-0_content.xml</filename><filesize>6785</filesize><hashdigest type='md5'>37c25835b3e1b09c7460539256bf24fe</hashdigest></fileobject>
+./Documents/Study1.odt􀀜-16206-ZIP-0	unzip_carved/000/._Documents_Study1.odt____-16206-ZIP-0_settings.xml	<fileobject><filename>Results2/unzip_carved/000/._Documents_Study1.odt____-16206-ZIP-0_settings.xml</filename><filesize>8550</filesize><hashdigest type='md5'>0d242ceede8a2791006de692b51f5f70</hashdigest></fileobject>
+./Documents/Study1.odt􀀜-17615-ZIP-0	unzip_carved/000/._Documents_Study1.odt____-17615-ZIP-0_styles.xml	<fileobject><filename>Results2/unzip_carved/000/._Documents_Study1.odt____-17615-ZIP-0_styles.xml</filename><filesize>10391</filesize><hashdigest type='md5'>9196217779efa360c17d2385c9214353</hashdigest></fileobject>
+./Documents/Study1.odt􀀜-19599-ZIP-0	unzip_carved/000/._Documents_Study1.odt____-19599-ZIP-0_manifest.rdf	<fileobject><filename>Results2/unzip_carved/000/._Documents_Study1.odt____-19599-ZIP-0_manifest.rdf</filename><filesize>899</filesize><hashdigest type='md5'>ea9300f431c910e10f0da4810cd87433</hashdigest></fileobject>
+./Documents/Study1.odt􀀜-20939-ZIP-0	unzip_carved/000/._Documents_Study1.odt____-20939-ZIP-0_META-INF_manifest.xml	<fileobject><filename>Results2/unzip_carved/000/._Documents_Study1.odt____-20939-ZIP-0_META-INF_manifest.xml</filename><filesize>1086</filesize><hashdigest type='md5'>efc074a8f3a0fdf543bdef2f86563056</hashdigest></fileobject>
+./Documents/MRI.zip􀀜-0-ZIP-0	unzip_carved/000/._Documents_MRI.zip____-0-ZIP-0_MRI.png	<fileobject><filename>Results2/unzip_carved/000/._Documents_MRI.zip____-0-ZIP-0_MRI.png</filename><filesize>1588732</filesize><hashdigest type='md5'>403d69eeaf0853f01c3f008c55fdf028</hashdigest></fileobject>

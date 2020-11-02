@@ -1,0 +1,52 @@
+# BANNER FILE NOT PROVIDED (-b option)
+# BULK_EXTRACTOR-Version: 1.6.0 ($Rev: 10844 $)
+# Feature-Recorder: domain
+# Filename: .
+# Feature-File-Version: 1.1
+./Documents/Study1.odt􀀜-20101	www.w3.org	s:xlink="http://www.w3.org/1999/xlink" xml
+./Documents/Study1.odt􀀜-20141	purl.org	mlns:dc="http://purl.org/dc/elements/1.1
+./Documents/Study1.odt􀀜-20246	openoffice.org	lns:ooo="http://openoffice.org/2004/office" xm
+./Documents/Study1.odt􀀜-20294	www.w3.org	s:grddl="http://www.w3.org/2003/g/data-vie
+./Documents/Study1.odt􀀜-20346	openoffice.org	textooo="http://openoffice.org/2013/office" of
+./Documents/Study1.odt􀀜-14054-ZIP-466	www.w3.org	s:xlink="http://www.w3.org/1999/xlink" xml
+./Documents/Study1.odt􀀜-14054-ZIP-506	purl.org	mlns:dc="http://purl.org/dc/elements/1.1
+./Documents/Study1.odt􀀜-14054-ZIP-870	www.w3.org	ns:math="http://www.w3.org/1998/Math/MathM
+./Documents/Study1.odt􀀜-14054-ZIP-1041	openoffice.org	lns:ooo="http://openoffice.org/2004/office" xm
+./Documents/Study1.odt􀀜-14054-ZIP-1088	openoffice.org	ns:ooow="http://openoffice.org/2004/writer" xm
+./Documents/Study1.odt􀀜-14054-ZIP-1135	openoffice.org	ns:oooc="http://openoffice.org/2004/calc" xmln
+./Documents/Study1.odt􀀜-14054-ZIP-1179	www.w3.org	lns:dom="http://www.w3.org/2001/xml-events
+./Documents/Study1.odt􀀜-14054-ZIP-1228	www.w3.org	:xforms="http://www.w3.org/2002/xforms" xm
+./Documents/Study1.odt􀀜-14054-ZIP-1270	www.w3.org	lns:xsd="http://www.w3.org/2001/XMLSchema"
+./Documents/Study1.odt􀀜-14054-ZIP-1315	www.w3.org	lns:xsi="http://www.w3.org/2001/XMLSchema-
+./Documents/Study1.odt􀀜-14054-ZIP-1369	openoffice.org	lns:rpt="http://openoffice.org/2005/report" xm
+./Documents/Study1.odt􀀜-14054-ZIP-1473	www.w3.org	s:xhtml="http://www.w3.org/1999/xhtml" xml
+./Documents/Study1.odt􀀜-14054-ZIP-1516	www.w3.org	s:grddl="http://www.w3.org/2003/g/data-vie
+./Documents/Study1.odt􀀜-14054-ZIP-1569	openoffice.org	ableooo="http://openoffice.org/2009/table" xml
+./Documents/Study1.odt􀀜-14054-ZIP-1618	openoffice.org	textooo="http://openoffice.org/2013/office" xm
+./Documents/Study1.odt􀀜-16206-ZIP-149	www.w3.org	s:xlink="http://www.w3.org/1999/xlink" xml
+./Documents/Study1.odt􀀜-16206-ZIP-254	openoffice.org	lns:ooo="http://openoffice.org/2004/office" xm
+./Documents/Study1.odt􀀜-16206-ZIP-304	openoffice.org	textooo="http://openoffice.org/2013/office" of
+./Documents/Study1.odt􀀜-17615-ZIP-465	www.w3.org	s:xlink="http://www.w3.org/1999/xlink" xml
+./Documents/Study1.odt􀀜-17615-ZIP-505	purl.org	mlns:dc="http://purl.org/dc/elements/1.1
+./Documents/Study1.odt􀀜-17615-ZIP-869	www.w3.org	ns:math="http://www.w3.org/1998/Math/MathM
+./Documents/Study1.odt􀀜-17615-ZIP-1040	openoffice.org	lns:ooo="http://openoffice.org/2004/office" xm
+./Documents/Study1.odt􀀜-17615-ZIP-1087	openoffice.org	ns:ooow="http://openoffice.org/2004/writer" xm
+./Documents/Study1.odt􀀜-17615-ZIP-1134	openoffice.org	ns:oooc="http://openoffice.org/2004/calc" xmln
+./Documents/Study1.odt􀀜-17615-ZIP-1178	www.w3.org	lns:dom="http://www.w3.org/2001/xml-events
+./Documents/Study1.odt􀀜-17615-ZIP-1224	openoffice.org	lns:rpt="http://openoffice.org/2005/report" xm
+./Documents/Study1.odt􀀜-17615-ZIP-1328	www.w3.org	s:xhtml="http://www.w3.org/1999/xhtml" xml
+./Documents/Study1.odt􀀜-17615-ZIP-1371	www.w3.org	s:grddl="http://www.w3.org/2003/g/data-vie
+./Documents/Study1.odt􀀜-17615-ZIP-1424	openoffice.org	ableooo="http://openoffice.org/2009/table" xml
+./Documents/Study1.odt􀀜-17615-ZIP-1473	openoffice.org	textooo="http://openoffice.org/2013/office" xm
+./Documents/Study1.odt􀀜-19599-ZIP-66	www.w3.org	lns:rdf="http://www.w3.org/1999/02/22-rdf-
+./Documents/Study1.odt􀀜-19599-ZIP-183	docs.oasis-open.org	esource="http://docs.oasis-open.org/ns/office/1.2/m
+./Documents/Study1.odt􀀜-19599-ZIP-329	docs.oasis-open.org	lns:ns0="http://docs.oasis-open.org/ns/office/1.2/m
+./Documents/Study1.odt􀀜-19599-ZIP-502	docs.oasis-open.org	esource="http://docs.oasis-open.org/ns/office/1.2/m
+./Documents/Study1.odt􀀜-19599-ZIP-649	docs.oasis-open.org	lns:ns0="http://docs.oasis-open.org/ns/office/1.2/m
+./Documents/Study1.odt􀀜-19599-ZIP-812	docs.oasis-open.org	esource="http://docs.oasis-open.org/ns/office/1.2/m
+./prod/sb-ihv/firmware/NX-H218/0-00-1.0/bin/bin􀀜-105344	www.w3.org	lns:rdf="http://www.w3.org/1999/02/22-rdf-
+./prod/sb-ihv/firmware/NX-H218/0-00-1.0/bin/bin􀀜-105436	purl.org	mlns:dc="http://purl.org/dc/elements/1.1
+./prod/sb-ihv/firmware/NX-H218/0-00-1.0/bin/bin􀀜-105491	ns.adobe.com	otoshop="http://ns.adobe.com/photoshop/1.0/"
+./prod/sb-ihv/firmware/NX-H218/0-00-1.0/bin/bin􀀜-105542	ns.adobe.com	lns:xmp="http://ns.adobe.com/xap/1.0/"\x0A    x
+./prod/sb-ihv/firmware/NX-H218/0-00-1.0/bin/bin􀀜-105589	ns.adobe.com	s:xmpMM="http://ns.adobe.com/xap/1.0/mm/"\x0A  
+./prod/sb-ihv/firmware/NX-H218/0-00-1.0/bin/bin􀀜-105639	ns.adobe.com	s:stEvt="http://ns.adobe.com/xap/1.0/sType/R
